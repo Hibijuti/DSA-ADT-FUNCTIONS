@@ -43,6 +43,8 @@ Queue *initialize(){
     Q->head = NULL;
     Q->tail = NULL;
     Q->size = 0;
+
+    return Q;
 }
 
 bool isEmpty(Queue *q){
