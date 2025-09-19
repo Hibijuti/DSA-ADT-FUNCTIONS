@@ -19,7 +19,7 @@ int peek();
 void display();
 
 int main(){
-    Stack *S = initialize(S);
+    Stack *S = initialize();
     
     push(S, 5);
     push(S, 10);
@@ -37,8 +37,8 @@ int main(){
     
 }
 
-Stack *initialize(Stack *s){
-    Node *newNode = malloc(sizeof(Node));
+Stack *initialize(){
+    Stack *s = malloc(sizeof(Stack));
     s->top = NULL;
     return s;
 }
